@@ -41,47 +41,53 @@ JSON file, no account, no cost.
 
 ## Publishing a new build
 
-1. Drop the new zip in `downloads/` (or wherever you're hosting large
-   files — see the Netlify note below).
+1. Drop the new zip in `downloads/`.
 2. Edit `version.json`: bump `version`, update `url` if the filename
    changed, set `released` to today's date.
-3. Redeploy (drag the folder onto Netlify again, or if you connect Netlify
-   to a GitHub repo it redeploys automatically on push).
+3. Commit and push. GitHub Pages redeploys automatically within a minute
+   or two of a push to `main` — nothing else to trigger.
 
 That's the entire release process. No code changes needed for a new build.
 
-## Going live: OlympicBash.com
+## Where this actually lives
 
-You own the domain. Two things need to happen once:
+Hosted on **GitHub Pages**, on the account already logged in on this
+machine (`ChallengerA91`) — no new account, no cost, no separate host to
+manage:
 
-### 1. Host the files somewhere (I'd use Netlify — free, no command line)
+- Repo: https://github.com/ChallengerA91/olympic-bash-site
+- Live now at: https://challengera91.github.io/olympic-bash-site/
+- Configured to serve at `olympicbash.com` once DNS points there (see below)
 
-1. Go to [app.netlify.com/drop](https://app.netlify.com/drop) and make a
-   free account.
-2. Drag this whole folder (`OlympicBash-Website`) onto the page.
-3. Netlify gives you a random URL like `chipper-narwhal-123.netlify.app` —
-   that's your site, live, immediately. Check it works before moving on.
+Every `git push` to `main` redeploys it. GitHub Pages has no meaningful
+file-size limit for a site this size, so the game zip can live in
+`downloads/` for now. If a build ever gets huge (several hundred MB+), a
+game-file host like itch.io is a better fit than baking it into the repo
+— worth revisiting once you know the real file size, not before.
 
-Netlify handles files well over 100MB, so the game zip can live in
-`downloads/` and get deployed right along with the site. If a build ever
-gets huge (several hundred MB+), a game-file host like itch.io is a better
-fit than baking it into the site deploy — worth revisiting once you know
-the real file size.
+## Going live at OlympicBash.com: one step left
 
-### 2. Point OlympicBash.com at it
+Everything on GitHub's side is already configured — the repo has a
+`CNAME` file for `olympicbash.com` and Pages is set to expect it. The only
+thing left needs your Namecheap login, which I don't have and shouldn't:
 
-In Netlify: **Site settings → Domain management → Add a domain** → enter
-`olympicbash.com` → Netlify shows you either a set of DNS records to add,
-or (simpler) offers to become your DNS host directly.
+In Namecheap: **Domain List → Manage → Advanced DNS**, and add these
+records (delete any existing `A` or `CNAME` records on `@` first so they
+don't conflict):
 
-Then in Namecheap: **Domain List → Manage → Nameservers**, or if you keep
-Namecheap as DNS, **Advanced DNS**, and add exactly the records Netlify's
-page shows you. It's usually one `A` record and one `CNAME`. DNS changes
-can take up to a few hours to take effect — that's normal, not broken.
+| Type | Host | Value |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | challengera91.github.io. |
 
-I can't do either of these two steps myself — they need your Netlify
-login and your Namecheap login. Everything else (the actual site) is
-already built.
+DNS changes can take anywhere from a few minutes to a few hours to take
+effect — that's normal, not broken. Once it resolves, GitHub automatically
+issues an HTTPS certificate for the domain with no further action from
+you. Say the word once you've added those and I'll check that it's
+resolving.
 
 ## If you want a proper backend later
 
