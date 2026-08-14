@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
   "url": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "TBD",
-  "notes": "Playtest build — update this file each time you ship a new zip."
+  "released": "Aug 12, 2026",
+  "notes": "Playtest build. Windows only — unzip and run OlympicBash.exe."
 }
