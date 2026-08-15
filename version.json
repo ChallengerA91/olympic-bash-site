@@ -1,7 +1,7 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 15, 2026",
-  "notes": "Update messages now show a short code (like UPD-203) if anything ever goes wrong, so a problem can be reported precisely instead of just \"it didn't work.\""
+  "notes": "Fixed: the in-game \"WHAT'S NEW\" panel was silently empty in every build until now."
 }
