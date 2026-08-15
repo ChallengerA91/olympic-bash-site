@@ -8,7 +8,7 @@ collides with work happening in `Olympic Bash/`.
 ```
 index.html          the whole site (nav, hero, download button, footer)
 version.json         what "the server" is — see below
-downloads/            put the actual game .zip here before you deploy
+downloads/            put the actual installer/zip here before you deploy
 ```
 
 ## See it on your own computer
@@ -26,22 +26,40 @@ sits right next to `index.html` and looks like this:
 ```json
 {
   "version": "0.1.0",
-  "url": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "TBD",
-  "notes": "Playtest build — update this file each time you ship a new zip."
+  "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
+  "released": "Aug 15, 2026",
+  "notes": "Playtest build — update this file each time you ship a new build."
 }
 ```
 
 The page reads that file the moment someone loads it, so the Download
 button always points at whatever's current — nobody ever downloads a stale
-build by accident. Later, when the game itself wants to check "am I the
-latest version," it fetches this exact same file and compares its own
-version number to `version.version`. That's the whole contract — one small
-JSON file, no account, no cost.
+build by accident. `version.version` is a bare number (no "v" prefix —
+the page and the game both add that themselves when they display it).
+
+**As of Aug 15 2026, this file matters more than it used to.** The game now
+checks it on every launch and, if a build is exported with `build.cmd`
+(which stamps a real version number into it — see the game repo's `VERSION`
+file), a mismatch here **blocks play entirely** until the player updates —
+not a soft "new version available" badge anymore. That means:
+
+- **Always update `version.json` and re-upload the matching installer to
+  `downloads/` in the SAME commit.** Bumping the number here without a
+  matching build locks out anyone who updates to "the new version" and gets
+  handed the old build — they'd never stop being told to update.
+- A build exported from source that was never given a bumped `VERSION`
+  first will just re-claim the same number as last time, which is safe
+  (no mismatch, no false block) — but also means players won't be offered
+  it as an update. Bump `VERSION` in the game repo before running
+  `build.cmd` for anything meant to actually reach players.
+- This file only matters to players running an **exported** build. Playing
+  from source (`godot --path godot`) skips the check entirely — there's no
+  meaningful "install directory" to protect there.
 
 ## Publishing a new build
 
-1. Drop the new zip in `downloads/`.
+1. Drop the new build (installer or zip) in `downloads/`. The game repo's
+   `build.cmd` produces `dist\OlympicBashSetup.exe` — that's what goes here.
 2. Edit `version.json`: bump `version`, update `url` if the filename
    changed, set `released` to today's date.
 3. Commit and push. GitHub Pages redeploys automatically within a minute
@@ -60,7 +78,7 @@ manage:
 - Configured to serve at `olympicbash.com` once DNS points there (see below)
 
 Every `git push` to `main` redeploys it. GitHub Pages has no meaningful
-file-size limit for a site this size, so the game zip can live in
+file-size limit for a site this size, so the game build can live in
 `downloads/` for now. If a build ever gets huge (several hundred MB+), a
 game-file host like itch.io is a better fit than baking it into the repo
 — worth revisiting once you know the real file size, not before.
