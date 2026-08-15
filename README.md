@@ -27,6 +27,7 @@ sits right next to `index.html` and looks like this:
 {
   "version": "0.1.0",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
+  "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 15, 2026",
   "notes": "Playtest build — update this file each time you ship a new build."
 }
@@ -36,6 +37,19 @@ The page reads that file the moment someone loads it, so the Download
 button always points at whatever's current — nobody ever downloads a stale
 build by accident. `version.version` is a bare number (no "v" prefix —
 the page and the game both add that themselves when they display it).
+
+**`url` and `update_zip` serve two different consumers, on purpose.**
+`url` is what the website's Download button uses — the installer, meant for
+a human to run. `update_zip` is what the game's own in-game auto-updater
+fetches — it downloads that file and unzips it itself, so it needs an
+actual zip, not something that runs an installer wizard. **Both must be
+kept present and pointing at real files for every release**, or the
+in-game "UPDATE NOW" button breaks with "the downloaded update looked
+broken" — this happened once already (Aug 15 2026) when `url` was
+switched to the installer without adding `update_zip`, and every player
+who hit the mandatory update gate got stuck. `build.cmd` produces both
+`dist\OlympicBashSetup.exe` and `dist\OlympicBash.zip` from the same
+build — upload both.
 
 **As of Aug 15 2026, this file matters more than it used to.** The game now
 checks it on every launch and, if a build is exported with `build.cmd`
@@ -58,10 +72,13 @@ not a soft "new version available" badge anymore. That means:
 
 ## Publishing a new build
 
-1. Drop the new build (installer or zip) in `downloads/`. The game repo's
-   `build.cmd` produces `dist\OlympicBashSetup.exe` — that's what goes here.
-2. Edit `version.json`: bump `version`, update `url` if the filename
-   changed, set `released` to today's date.
+1. Drop the new build in `downloads/` — **both files**, `OlympicBashSetup.exe`
+   AND `OlympicBash.zip`. `build.cmd` produces both from the same build;
+   the installer is for the Download button, the zip is for the in-game
+   auto-updater (see the `update_zip` note above — skipping this half
+   breaks in-game updates, not the website).
+2. Edit `version.json`: bump `version`, update `url`/`update_zip` if either
+   filename changed, set `released` to today's date.
 3. Commit and push. GitHub Pages redeploys automatically within a minute
    or two of a push to `main` — nothing else to trigger.
 

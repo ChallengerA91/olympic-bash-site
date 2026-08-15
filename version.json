@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
+  "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 15, 2026",
-  "notes": "Now with a real installer (Start Menu shortcut, clean uninstall) and optional accounts to sync your record across computers — both fully optional."
+  "notes": "Fixed: the update checker was reporting your build as \"dev build\" and the in-game auto-updater couldn't apply updates. Both fixed."
 }
