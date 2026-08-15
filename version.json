@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 15, 2026",
-  "notes": "Fixed: the update checker was reporting your build as \"dev build\" and the in-game auto-updater couldn't apply updates. Both fixed."
+  "notes": "Update messages now show a short code (like UPD-203) if anything ever goes wrong, so a problem can be reported precisely instead of just \"it didn't work.\""
 }
