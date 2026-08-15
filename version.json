@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "build 2026-08-14 23:39  (e447f08)",
   "url": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "Aug 12, 2026",
-  "notes": "Playtest build. Windows only — unzip and run OlympicBash.exe."
+  "released": "Aug 14, 2026",
+  "notes": "Playtest build. Windows only — unzip and run OlympicBash.exe. Multiplayer now includes FIND A MATCH, auto-paired online."
 }
