@@ -1,7 +1,7 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 15, 2026",
-  "notes": "The game now checks for updates the whole time it's running, not just at launch — you'll be walked through updating as soon as you're not actively in a match."
+  "notes": "Fixed defenders freezing up over an unreachable flying Siren, crowds jamming each other out of range of a tower, and ranged arrows blending invisibly into the terrain."
 }
