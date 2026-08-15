@@ -150,6 +150,13 @@
     width:7px; height:7px; border-radius:50%; background:#7fae6e;
     box-shadow:0 0 8px #7fae6e;
   }
+  .smartscreen-note{
+    margin-top:14px; padding:10px 14px; max-width:46ch;
+    font-size:0.8rem; line-height:1.5; color:var(--limestone-dim);
+    background:var(--ink-2); border:1px solid var(--line);
+    clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));
+  }
+  .smartscreen-note strong{ color:var(--limestone); font-weight:600; }
 
   .bolt-stage{ position:relative; display:flex; align-items:center; justify-content:center; height:100%; min-height:320px; }
   .bolt-stage svg{ width:70%; max-width:230px; filter:drop-shadow(0 18px 40px rgba(193,81,46,0.35)); }
@@ -271,6 +278,11 @@
         <a class="btn btn-ghost" href="#howto">How the battles connect ↓</a>
       </div>
       <div class="hero-meta"><span class="dot"></span><span id="status-line">Fetching the current build…</span></div>
+      <p class="smartscreen-note">
+        Windows will probably show a blue "Windows protected your PC" screen —
+        that's normal for any small, brand-new indie game, not a sign of a
+        problem. Click <strong>More info</strong>, then <strong>Run anyway</strong>.
+      </p>
     </div>
     <div class="bolt-stage">
       <div class="bolt-ring"></div>
