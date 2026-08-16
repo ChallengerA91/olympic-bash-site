@@ -1,7 +1,7 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 16, 2026",
-  "notes": "Fixed a crowd of units freezing solid at chokepoints, a tower-health display glitch, and multiplayer matches that could silently disagree about the winner. FIND A MATCH no longer hangs forever if a connection attempt fails -- you'll get a clear message and can try again. Also hardened online matchmaking against a spoofing issue."
+  "notes": "Fixed the auto-updater getting stuck in a loop that kept saying an update was needed even after downloading it. If you're seeing that now, this update can't fix itself the same way -- please grab the installer from the download button on this page once to get unstuck, and updates after that will apply automatically like normal."
 }
