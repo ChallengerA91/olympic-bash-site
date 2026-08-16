@@ -1,7 +1,7 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "Aug 15, 2026",
-  "notes": "Fixed defenders freezing up over an unreachable flying Siren, crowds jamming each other out of range of a tower, and ranged arrows blending invisibly into the terrain."
+  "released": "Aug 16, 2026",
+  "notes": "Fixed a crowd of units freezing solid at chokepoints, a tower-health display glitch, and multiplayer matches that could silently disagree about the winner. FIND A MATCH no longer hangs forever if a connection attempt fails -- you'll get a clear message and can try again. Also hardened online matchmaking against a spoofing issue."
 }
