@@ -1,7 +1,7 @@
 {
-  "version": "0.1.8",
+  "version": "0.1.9",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "Aug 17, 2026",
-  "notes": "Fixed the new card art not actually showing up for anyone -- 0.1.7 shipped with it switched off by mistake, so every card was still drawing the old placeholder shapes. It's genuinely on now. Five deck presets and the pacing changes from 0.1.7 are unaffected and still in."
+  "released": "Aug 18, 2026",
+  "notes": "Fixed online matches falling further and further out of sync -- the first real multiplayer match had one player ending up 40 seconds behind the other. Cause found and fixed: the joining player could never catch up after any small network hiccup, so every stall added to the gap for the whole match. Both players now stay within about half a second of each other. Both players need this update for a match to benefit."
 }
