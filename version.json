@@ -1,7 +1,7 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.7",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "Aug 16, 2026",
-  "notes": "Fixed the auto-updater getting stuck in a loop that kept saying an update was needed even after downloading it. If you're seeing that now, this update can't fix itself the same way -- please grab the installer from the download button on this page once to get unstuck, and updates after that will apply automatically like normal."
+  "released": "Aug 17, 2026",
+  "notes": "Every card now has real illustrated art instead of placeholder shapes. You can also save up to five deck presets and switch between them instantly instead of rebuilding your deck each time -- your existing deck became Preset 1 automatically. A few card costs were retuned for better match pacing (details on request). Note: this is a bigger download than usual because of the new art."
 }
