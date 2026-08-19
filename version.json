@@ -1,7 +1,7 @@
 {
-  "version": "0.1.10",
+  "version": "0.1.11",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
-  "released": "Aug 18, 2026",
-  "notes": "New battlefield: the arena is now a bright marble Olympus court floating above the clouds, with processional roads, an Aegean river, and sandstone bridges. Towers have new sculpted Guardian and Victory designs, and destroyed towers leave ruins behind. Fallen troops dissolve into a burst of aether. Bigger download than usual because of the new art."
+  "released": "Aug 19, 2026",
+  "notes": "The Olympus Rebalance: 36 cards changed, the biggest balance pass yet. Athena, Poseidon, The Hydra, Chariot, and Spartan Warlord were the real problems and got trimmed; eighteen cards nobody played (Hermes, Fire Wisp, Watchtower, Wrath of Olympus, and more) got real buffs. Every number was measured before and after -- see the patch notes in-game. Titans are now COMING SOON: greyed out in your collection and not deckable yet, until their own update lands."
 }
