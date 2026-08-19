@@ -1,7 +1,7 @@
 {
-  "version": "0.1.9",
+  "version": "0.1.10",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 18, 2026",
-  "notes": "Fixed online matches falling further and further out of sync -- the first real multiplayer match had one player ending up 40 seconds behind the other. Cause found and fixed: the joining player could never catch up after any small network hiccup, so every stall added to the gap for the whole match. Both players now stay within about half a second of each other. Both players need this update for a match to benefit."
+  "notes": "New battlefield: the arena is now a bright marble Olympus court floating above the clouds, with processional roads, an Aegean river, and sandstone bridges. Towers have new sculpted Guardian and Victory designs, and destroyed towers leave ruins behind. Fallen troops dissolve into a burst of aether. Bigger download than usual because of the new art."
 }
