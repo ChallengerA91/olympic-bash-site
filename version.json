@@ -1,7 +1,7 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 20, 2026",
-  "notes": "THE SYMPOSIUM -- friends, and a whole new look. FRIENDS: search a player by name, send a request, and once they accept tap INVITE to drop straight into a battle together -- no addresses, no setup, works anywhere. The whole home screen is rebuilt: every button is a real object now with proper depth, lighting and its own colour. One BATTLE button -- big half fights, small half picks difficulty or multiplayer. GUILDS is back on the bottom bar and REWARDS moved up top. A win streak flag hangs under your name, chests sit in real stone sockets, and the REWARDS page has a new TREASURY card. Plus Shield Hoplites got real hand-drawn artwork in all four directions."
+  "notes": "YOUR ACCOUNT IS ACTUALLY YOURS NOW. Fixed a big one: the game was quietly signing you in as a brand new player every single time you launched it, leaving your name, coins, chests and friends behind on an account you could never reach again. The game now remembers who you are. Also fixed: adding an email used to create a SECOND account and abandon everything you had -- it now upgrades the account you already have, same name, same coins, same chests, same friends. Plus a rebuilt first-launch screen with twelve genuinely different portraits, and real text boxes and buttons on the account screen."
 }
