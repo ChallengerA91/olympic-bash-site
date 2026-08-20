@@ -1,7 +1,7 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.13",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 20, 2026",
-  "notes": "Hearts & Thunder: love now CONVERTS -- fill a unit's heart with WaveCasters or the Siren and it joins your side (Gods die of heartbreak instead). Every God's ability reworked or sharpened: Hermes dashes, Poseidon fires a water laser, Ares executes, Zeus's chain truly hops and stuns, Hades opens the Gates of the Dead. Medusa petrifies her victim into a statue, Minotaur bull-rushes, shields now work exactly like Clash Royale, every unit winds up before its first swing, and enemy traps are invisible until they spring. Plus a new battle HUD, loading screens, and a boot splash. Measured across 11,000+ duels."
+  "notes": "The Playmaker: the bots got a brain. Every match the bot draws a secret game plan -- instant rushes, silent banking, pushes on both bridges at once. Overcommit a lane and it may ignore your push and slam the other one. Bots now spell your wounded towers, mine bridges with invisible Ambushes, dive through the gap when your tower falls, and go all-in in overtime. Three new opponents: the Trickster, the Charmer, and Siege. Still perfectly fair -- same elixir, same rules, no cheats."
 }
