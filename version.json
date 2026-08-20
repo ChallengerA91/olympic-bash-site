@@ -1,7 +1,7 @@
 {
-  "version": "0.1.13",
+  "version": "0.1.14",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 20, 2026",
-  "notes": "The Playmaker: the bots got a brain. Every match the bot draws a secret game plan -- instant rushes, silent banking, pushes on both bridges at once. Overcommit a lane and it may ignore your push and slam the other one. Bots now spell your wounded towers, mine bridges with invisible Ambushes, dive through the gap when your tower falls, and go all-in in overtime. Three new opponents: the Trickster, the Charmer, and Siege. Still perfectly fair -- same elixir, same rules, no cheats."
+  "notes": "The Tactician: the bots learned to think. Eight truly distinct opponents, each bringing two surprise picks every match. The bot reads your push and answers it properly -- anti-air against flyers, splash against swarms, its best damage against tanks -- and it refuses bad trades. Real pushes with a tank up front and archers behind. HARD counts your cards: play your biggest card and it knows your hand is weak. Also: Lava Ball is now BOULDER -- same card, new name, still in your deck."
 }
