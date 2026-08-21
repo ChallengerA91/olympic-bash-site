@@ -1,7 +1,7 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://olympicbash.com/downloads/OlympicBashSetup.exe",
   "update_zip": "https://olympicbash.com/downloads/OlympicBash.zip",
   "released": "Aug 20, 2026",
-  "notes": "YOUR ACCOUNT IS ACTUALLY YOURS NOW. Fixed a big one: the game was quietly signing you in as a brand new player every single time you launched it, leaving your name, coins, chests and friends behind on an account you could never reach again. The game now remembers who you are. Also fixed: adding an email used to create a SECOND account and abandon everything you had -- it now upgrades the account you already have, same name, same coins, same chests, same friends. Plus a rebuilt first-launch screen with twelve genuinely different portraits, and real text boxes and buttons on the account screen."
+  "notes": "SECURING YOUR ACCOUNT ACTUALLY WORKS NOW. 'Secure my account' was quietly doing nothing -- it said saved, but the email was never really attached, so you could never sign in with it on any device. It genuinely works now: add an email and you can log back in anywhere and find your name, coins, chests and friends waiting. It keeps the SAME account, so nothing is copied and nothing is left behind. You also get a clear answer now when an email is already registered, instead of a silent failure."
 }
